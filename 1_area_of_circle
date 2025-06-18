@@ -1,0 +1,29 @@
+/*  wap to findout & area of circle using given radius
+
+steps
+-------------------------
+1 create variable area,radius
+2 accept area from user
+3 accept radius from user
+4 calculate area using area and radius
+    area = 3.14 * radius * radius
+5 display area    
+*/
+
+#include<stdio.h>
+void main()
+
+{
+    int area,radius;
+    
+    printf("enter area");
+    scanf("%d",&area);
+    
+    printf("enter radius");
+    scanf("%d",&radius);
+    
+    area = 3.14 * radius * radius;
+    
+    printf("area %d radius %d",area,radius);
+    
+}
