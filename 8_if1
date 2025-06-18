@@ -1,0 +1,36 @@
+/*
+wap to findout whether business man has made what amount of profit or loss from given purchase and sales price
+
+steps
+--------------------------
+1 create variable purchase sales
+2 accept purchase from user
+3 accept sales from user
+4 findout whether as profit or loss 
+    if sales price > purchase price = profit
+    if sales price < purchase price= loss 
+5 display profit or loss
+*/
+
+#include<stdio.h>
+void main()
+
+{
+    int purchase,sales;
+    
+    printf("enter purchase");
+    scanf("%d",&purchase);
+    
+    printf("enter sales");
+    scanf("%d",&sales);
+    
+    if(sales>purchase)
+    {
+        printf("profit");
+    }
+    if(sales<purchase)
+    {
+        printf("loss");
+    }
+    
+}
