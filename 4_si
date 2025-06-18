@@ -1,0 +1,35 @@
+/*
+    wap to findout & display simple interest amount using given amount, rate, year
+
+  steps
+  --------------------------------
+  
+  1 create variable p r n si
+  2 accept p from user
+  3 accept r from user
+  4 accept n from user
+  5 calculate si using formula
+    p * r * n * / 100
+  6 display si 
+*/
+#include<stdio.h>
+void main()
+
+{
+    float price,rate,number,si;
+    
+    printf("enter price");
+    scanf("%f",&price);
+    
+    printf("enter rate");
+    scanf("%f",&rate);
+    
+    printf("enter number");
+    scanf("%f",&number);
+    
+    si = price * rate * number / 100;
+    
+    printf("simple interest %.2f",si);
+    
+}
+  

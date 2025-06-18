@@ -1,0 +1,31 @@
+/* wap to convert given into killogram and remainigb gram 
+        1500 grams
+        1 kg & 500 grams
+
+steps
+-----------------------
+1 create variable kg grams
+2 accept gramsfrom user
+3 calculate grams 
+    kg = grams / 1000
+4 calculate remaining grams 
+    1500 - (1 * 1000) = 500
+    grams = grams - (kg * 1000)
+5display kg and grams 
+*/
+
+#include<stdio.h>
+void main()
+
+{
+    int kg,grams;
+    
+    printf("enter total grams");
+    scanf("%d",&grams);
+    
+    kg = grams / 1000;
+    grams = grams - (kg * 1000);
+    
+    printf(" kg %d grams %d",kg,grams);
+    
+}

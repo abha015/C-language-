@@ -1,0 +1,33 @@
+/*  wap to findout & area of triangle using given height & base
+
+steps
+-------------------------
+1 create variable area,height,base
+2 accept area from user
+3 accept height from user
+4 accept base from user
+5 calculate area using area,height and base
+    area = 0.5 * (h * b)
+6 display area    
+*/ 
+
+#include<stdio.h>
+void main()
+
+{
+    int area,height,base;
+    
+    printf("enter area");
+    scanf("%d",&area);
+    
+    printf("enter height");
+    scanf("%d",&height);
+    
+    printf("enter base");
+    scanf("%d",&base);
+    
+    area = 0.5 * (height * base);
+    
+    printf("area %d height %d base %d",area,height,base);
+    
+}

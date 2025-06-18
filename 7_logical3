@@ -1,0 +1,36 @@
+/* wap to reverse 3 digit amount 
+    input  123
+    output  321
+steps
+-------------------
+1 create variable amount last middle first
+2 accept amount from user
+3 get last digit of amount(123)
+    last(3) = amount % 10
+4 get middle digit of amount(123)
+    middle(2) = (amount / 10) % 10
+5 get first digit of amount (123)
+    first = amount / 100
+6 display amount    
+    
+*/
+
+#include<stdio.h>
+void main()
+
+{
+    int amount,last,middle,first;
+    
+    printf("enter amount");
+    scanf("%d",&amount);
+    
+    last = amount % 10;
+    middle = (amount /10) % 10;
+    first = amount / 100;
+    
+    amount = (last * 100) + (middle *10) + first;
+    
+    printf("amount %d",amount);
+    
+    
+}

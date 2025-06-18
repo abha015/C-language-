@@ -1,0 +1,32 @@
+/* wap to convert inches ionto foot and remaining inches
+    
+    86 inch
+    7 foot & 2 inch
+    
+steps
+-----------------------
+1 create variable inch,foot
+2 accept inch form user
+3 calculate foot
+    foot = inch / 12
+4 calculate remaining inch 
+    86 - (7 * 12) = 12
+    inch = inch - (foot * 12)
+5 display foot and inch 
+*/
+
+#include<stdio.h>
+void main()
+
+{
+    int inch,foot;
+    
+    printf("enter total inch");
+    scanf("%d",&inch);
+    
+    foot = inch / 12;
+    inch = inch - (foot * 12);
+    
+    printf("foot %d inch %d",foot,inch);
+    
+}

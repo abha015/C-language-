@@ -1,0 +1,30 @@
+/* wap to findout & area of cylinder using given radius and height
+
+steps
+-------------------------
+1 create variable area,radius,height
+2 accept area from user
+3 accept radius from user
+4 accept height from user
+5 calculate area using area,radius and height
+    area = (2 * 3.14 * radius * height) * (2 * 3.14 * radius * radius)
+6 display area
+*/
+
+#include<stdio.h>
+void main()
+
+{
+    int area,radius,height;
+    
+    printf("enter radius");
+    scanf("%d",&radius);
+    
+    printf("enter height");
+    scanf("%d",&height);
+    
+    area = (2 * 3.14 * radius * height) * (2 * 3.14 * radius * radius);
+    
+    printf("area %d radius %d height %d",area,radius,height);
+    
+}
