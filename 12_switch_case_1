@@ -1,0 +1,86 @@
+/* wap  to accept month number from user and display name of the month using switch case statement
+
+steps
+------------------------------
+1 create variable month
+2 accept month from user
+3 check month & print name of the month
+    if month = 1 then print january
+    if month = 2 then print february
+    if month = 3 then print march
+    if month = 4 then print april
+    if month = 5 then print may 
+    if month = 6 then print june
+    if month = 7 then print july
+    if month = 8 then print august
+    if month = 9 then print september
+    if month = 10 then print october
+    if month = 11 then print november
+    if month = 12 then print december
+    ortherwise print invalid month
+
+*/
+#include<stdio.h>
+void main()
+
+{
+    int month;
+    
+    printf("enter month");
+    scanf("%d",&month);
+    
+    switch(month)
+    {
+        case 1:
+            printf("january");
+        break;
+        
+        case 2:
+            printf("february");
+        break;
+        
+        case 3:
+            printf("march");
+        break;
+        
+        case 4:
+            printf("april");
+        break;
+        
+        case 5:
+            printf("may");
+        break;
+        
+        case 6:
+            printf("june");
+        break;
+        
+        case 7:
+            printf("july");
+        break;
+        
+        case 8:
+            printf("august");
+        break;
+        
+        case 9:
+            printf("september");
+        break;
+        
+        case 10:
+            printf("october");
+        break;
+        
+        case 11:
+            printf("november");
+        break;
+        
+        case 12:
+            printf("december");
+        break;
+        
+        default:
+            printf("invalid month");
+        break;    
+    }
+}
