@@ -1,0 +1,55 @@
+/*
+wap to findout which circle is smaller from two circle's radius given by user
+
+steps
+-----------------------------------
+1 create variable r1 a1 r2 a2 
+2 accept r1,a1,r2,a2,feom user
+3 calculate area
+    a1 = 3.14 * r1 * r1
+    a2 = 3.14 * r2 * r2
+4 display area
+5 if a1 greter than a2 = 2 circle is small 
+6 if a2 greter than a1 = 1 circle is small
+7 if a1 equal = both are same 
+
+*/
+#include<stdio.h>
+void main()
+
+{
+    int r1,a1,r2,a2;
+    
+    printf("enter r1");
+    scanf("%d",&r1);
+    
+    printf("enter a1");
+    scanf("%d",&a1);
+    
+    printf("enter r2");
+    scanf("%d",&r2);
+    
+    printf("enter a2");
+    scanf("%d",&a2);
+    
+    a1 = 3.14 * r1 * r1;
+    a2 = 3.14 * r2 * r2;
+    
+    printf("r1 %d a1 %d r2 %d a2 %d",r1,a1,r2,a2);
+    
+    if(a1>a2)
+    {
+        printf("\n 2 circle is small");
+        
+    }
+    else if(a2>a1)
+    {
+        printf("\n 1 circle is small");
+        
+    }
+    else
+    {
+        printf("\n both are same");
+        
+    }
+}
