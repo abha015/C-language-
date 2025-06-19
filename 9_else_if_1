@@ -1,0 +1,68 @@
+/*
+    wap to findout smaller triangle from 2 triangle using given length and base of triangles
+    
+        steps
+        ----------------------------------
+        1 create variable h1 b1 h2 b2 a1 a2 
+        2 accept h1 from user
+        3 accept b1 from user
+        4 accept a1 from user
+        5 accept h2 from user
+        6 accept b2 from user
+        7 accept a2 from user
+        8 calculate area using formula
+            a1 = 0.5 * (h1 * b1)
+            a2 = 0.5 * (h2 * b2)
+        9 display area
+        10 if a1 greter than a2 = 2 triangle is small 
+        11 if a2 greter than a1 = 1 triangle is small
+        12 if a1 equal a2 = both are same
+        
+*/
+#include<stdio.h>
+void main()
+
+{
+    int h1,b1,a1,h2,b2,a2;
+    
+    printf("enter h1");
+    scanf("%d",&h1);
+    
+    printf("enter b1");
+    scanf("%d",&b1);
+    
+    printf("enter a1");
+    scanf("%d",&a1);
+    
+    printf("enter h2");
+    scanf("%d",&h2);
+    
+    printf("enter b2");
+    scanf("%d",&b2);
+    
+    printf("enter a2");
+    scanf("%d",&a2);
+    
+    a1 = 0.5 * (h1 * b1);
+    a2 = 0.5 * (h2 * b2);
+    
+    printf("h1 %d b1 %d a1 %d h2 %d b2 %d a2 %d",h1,b1,a1,h2,b2,a2);
+    
+    if(a1>a2)
+    {
+        printf("\n second triangle is small");
+        
+    }
+    else if(a2>a1)
+    {
+        printf("\n first triangle is small");
+        
+        
+    }
+    else
+    {
+        printf("\n both are same");
+        
+    }
+    
+}
